@@ -7,6 +7,10 @@
 <body>
     <header style="display: flex; flex-direction: column; align-items: center;">
         <h1 style="text-align: center;">Image Gallery</h1>
+        <!-- Icon at the top that navigates to another page -->
+        <a href="/about.html" style="position: absolute; top: 20px; left: 20px;">
+            <img src="/images/icon.png" alt="" style="width:40px; height:40px; cursor:pointer;">
+        </a>
         <form id="searchForm" onsubmit="event.preventDefault(); filterGallery();" style="display: flex; justify-content: center; width: 100%;">
             <input type="text" id="searchInput" placeholder="Search..." style="width: 350px;">
             <button type="submit">Search</button>
