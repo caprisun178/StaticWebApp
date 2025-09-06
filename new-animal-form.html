@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="background-color: #c3f3ff;"></html>
+<html lang="en"></html>
 <head>
     <title>New Animal Form</title>
     <style>
@@ -42,16 +42,16 @@
         </nav>
     </header>
     <main>
-        <form style="border: 1px solid #333; padding: 16px; border-radius: 8px; width: 400px;">
+        <form style="border: 1px solid #333; padding: 16px; border-radius: 8px; width: 400px; background-color: lightgray;">
             <label for="animal-image">Add Image:</label>
             <input type="file" id="animal-image" name="animal-image" accept="image/*">
             <label for="animal-name">Animal Name:</label>
             <input type="text" id="animal-name" name="animal-name">
             <label for="animal-description">Description:</label>
             <input type="text" id="animal-description" name="animal-description">
-            <input type="text" id="tems" name="animal-list-items" placeholder="e.g. furry, nocturnal, fast">
+            <label for="animal-list-items">Fun Fact:</label>
+            <input type="text" id="animal-list-items" name="animal-list-items" placeholder="e.g. furry, nocturnal, fast">
             <button type="button" id="add-fact-btn">Add Fun Fact</button>
-             <label for="animal-list-items">Fun Facts:</label>
             <div id="fun-facts-list" style="margin-top: 10px;"></div>
             <button type="submit" id="save-btn" style="margin-top: 16px;">Save Changes</button>
         </form>
