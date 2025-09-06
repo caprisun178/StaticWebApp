@@ -24,10 +24,17 @@
         }
         .gallery-item {
             flex: 1;
+            margin-left: 20px;
+            margin-right: 20px;
+            cursor: pointer;
+            transition: box-shadow 0.2s;
+        }
+        .gallery-item:hover {
+            box-shadow: 0 0 10px #aaa;
         }
     </style>
     <div class="gallery-row">
-        <section class="gallery-item" style="display: flex; flex-direction: column; align-items: center;">
+        <section class="gallery-item" onclick="location.href='/details.html'" style="display: flex; flex-direction: column; align-items: center;">
             <img src="/images/Brown Pelican 05-31-2025.jpg" alt="Image 1" width="300">
             <div style="border:1px solid #ccc; padding:16px; margin-top:12px;  width:100%;">
                 <h3>Brown Pelican</h3>
@@ -38,9 +45,9 @@
                     They are fairly common today—an excellent example of a species’ recovery from pesticide pollution that once placed them at the brink of extinction.</p>
             </div>
         </section>
-        <section class="gallery-item" style="display: flex; flex-direction: column; align-items: center;">
+        <section class="gallery-item" onclick="location.href='/details.html'" style="display: flex; flex-direction: column; align-items: center;">
             <img src="/images/Cliff Swallow 05-14-2025.jpg" alt="Image 2" width="300">
-            <div style="border:1px solid #ccc; padding:16px; margin-top:12px;  width:100%;">
+            <div style="border:1px solid #ccc; padding:16px; margin-top:12px;  width:100%; margin-left: 10px; margin-right: 10px;">
                 <h3>Cliff Swallow</h3>
                 <h5>Captured on 05/14/2025 in Lewisville, NC. </h5>
                 <p>Busy flocks of Cliff Swallows often swarm around bridges and overpasses in summer, 
@@ -52,7 +59,7 @@
         </section>
     </div>
     <div class="gallery-row">
-        <section class="gallery-item" style="display: flex; flex-direction: column; align-items: center;">
+        <section class="gallery-item" onclick="location.href='/details.html'" style="display: flex; flex-direction: column; align-items: center;">
             <img src="/images/Hawm-6.jpg" alt="Image 3" width="400">
             <div style="border:1px solid #ccc; padding:16px; margin-top:12px; ">
                 <h3>Red-Tailed Hawk</h3>
@@ -62,7 +69,7 @@
                     fixed on the ground to catch the movements of a vole or a rabbit, or simply waiting out cold weather before climbing a thermal updraft into the sky.</p>
             </div>
         </section>
-        <section class="gallery-item" style="display: flex; flex-direction: column; align-items: center;">
+        <section class="gallery-item" onclick="location.href='/details.html'" style="display: flex; flex-direction: column; align-items: center;">
             <img src="/images/Hummingbird-Online-1.jpg" alt="Image 4" width="400">
             <div style="border:1px solid #ccc; padding:16px; margin-top:12px; ">
                 <h3>Ruby-Throated hummingbird</h3>
@@ -75,7 +82,7 @@
         </section>
     </div>
     <div class="gallery-row">
-        <section class="gallery-item" style="display: flex; flex-direction: column; align-items: center;">
+        <section class="gallery-item" onclick="location.href='/details.html'" style="display: flex; flex-direction: column; align-items: center;">
             <img src="/images/Osprey 6-26-2025.jpg" alt="Image 5" width="400">
             <div style="border:1px solid #ccc; padding:16px; margin-top:12px; ">
                 <h3>Osprey</h3>
