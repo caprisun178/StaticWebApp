@@ -42,14 +42,34 @@
         </nav>
     </header>
     <main>
-        <form>
+        <form style="border: 1px solid #333; padding: 16px; border-radius: 8px; width: 400px;">
             <label for="animal-image">Add Image:</label>
             <input type="file" id="animal-image" name="animal-image" accept="image/*">
             <label for="animal-name">Animal Name:</label>
             <input type="text" id="animal-name" name="animal-name">
             <label for="animal-description">Description:</label>
             <input type="text" id="animal-description" name="animal-description">
+            <input type="text" id="tems" name="animal-list-items" placeholder="e.g. furry, nocturnal, fast">
+            <button type="button" id="add-fact-btn">Add Fun Fact</button>
+             <label for="animal-list-items">Fun Facts:</label>
+            <div id="fun-facts-list" style="margin-top: 10px;"></div>
+            <button type="submit" id="save-btn" style="margin-top: 16px;">Save Changes</button>
         </form>
     </main>
+    <script>
+        const factInput = document.getElementById('animal-list-items');
+        const addFactBtn = document.getElementById('add-fact-btn');
+        const factsListDiv = document.getElementById('fun-facts-list');
+
+        addFactBtn.addEventListener('click', function() {
+            const fact = factInput.value.trim();
+            if (fact) {
+                const factText = document.createElement('div');
+                factText.textContent = fact;
+                factsListDiv.appendChild(factText);
+                factInput.value = '';
+            }
+        });
+    </script>
 </body>
 </html>
