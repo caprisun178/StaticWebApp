@@ -1,11 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color: #c3f3ff;"></html>
 <head>
     <meta charset="UTF-8">
     <title>Basic Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style> 
+    body, h1, h3, h5, p, input, button {
+            font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+        }
+    </style>
 </head>
 <body>
+    <h1 style="text-align: center;">Image Gallery</h1>
+        <nav style="width: 100%; display: flex; justify-content: center; margin-bottom: 16px;">
+            <ul style="list-style: none; display: flex; gap: 32px; padding: 0; margin: 0;">
+            <li><a href="/index.html" style="text-decoration: none; font-weight: bold; color: #333;">Home</a></li>
+            <li><a href="/about.html" style="text-decoration: none; font-weight: bold; color: #333;">About</a></li>
+            <li><a href="/new-animal-form.html" style="text-decoration: none; font-weight: bold; color: #333;">Add Animal</a></li>
+            </ul>
+        </nav>
     <header style="text-align:center; padding:20px 0; font-size:2em; font-weight:bold;">
         Ruby-Throated Hummingbird
     </header>
@@ -21,12 +34,7 @@
     </section>
     <section style="margin-top:40px;">
         <h4 style="text-align:center;">Cool Facts</h4>
-        <ul style="width:100%; max-width:600px; margin:0 auto; padding-left:20px;">
-            <li style="margin-bottom:12px;">Ruby-throated Hummingbirds can beat their wings more than 50 times per second.</li>
-            <li style="margin-bottom:12px;">They migrate across the Gulf of Mexico in a single flight.</li>
-            <li style="margin-bottom:12px;">Only males have the bright ruby-red throat patch.</li>
-            <li style="margin-bottom:12px;">They can fly backwards and hover in place.</li>
-        </ul>
+        <textarea rows="6" style="width:100%; max-width:600px; display:block; margin:0 auto;"></textarea>
     </section>
 </body>
 </html>

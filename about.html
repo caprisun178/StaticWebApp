@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color: #c3f3ff;"></html>
 <head>
     <meta charset="UTF-8">
     <title>About</title>
     <style>
+         body, h1, h3, h5, p, input, button {
+            font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+        }
         body {
             display: flex;
             flex-direction: column;
@@ -50,11 +53,15 @@
     </style>
 </head>
 <body>
-       <a href="/index.html" style="position: absolute; top: 20px; left: 20px;">
-            <img src="/images/home.webp" alt="" style="width:40px; height:40px; cursor:pointer;">
-        </a>
     <header>
         <h1>About Me</h1>
+        <nav style="width: 100%; display: flex; justify-content: center; margin-bottom: 16px;">
+            <ul style="list-style: none; display: flex; gap: 32px; padding: 0; margin: 0;">
+            <li><a href="/index.html" style="text-decoration: none; font-weight: bold; color: #333;">Home</a></li>
+            <li><a href="/about.html" style="text-decoration: none; font-weight: bold; color: #333;">About</a></li>
+            <li><a href="/new-animal-form.html" style="text-decoration: none; font-weight: bold; color: #333;">Add Animal</a></li>
+            </ul>
+        </nav>
     </header>
     <section>
         <img src="/images/caprisun.jpg" alt="Sample Image">
