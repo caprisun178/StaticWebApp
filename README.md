@@ -1,0 +1,2 @@
+# StaticWebApp
+Assignment 2
